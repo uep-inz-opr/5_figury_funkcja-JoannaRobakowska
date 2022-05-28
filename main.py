@@ -13,7 +13,7 @@ def licz_pole(*args):
         wynik = math.sqrt(to_sqrt)
         return wynik
     else:
-        return „Błąd: można podać maksymalnie 3 liczby"
+        return "Błąd, można podać maksymalnie 3 liczby"
 
 def main():
     liczba_figur = int(input())
