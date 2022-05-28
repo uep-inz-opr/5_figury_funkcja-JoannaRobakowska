@@ -1,6 +1,6 @@
 import math
 
-def licz_pole(*args):
+def pole(*args):
     if len(args) == 1:
         wynik = math.pi*pow(args[0], 2)
         return wynik
@@ -25,12 +25,12 @@ def main():
     for figura in figury:
         figura = figura.split(' ')
         figura = [float(x) for x in figura]
-        pole = licz_pole(*figura)
+        pole = pole(*figura)
         if pole == "Błąd":
             print("Błąd: można podać maksymalnie 3 liczby")
             return
         else:
-            wynik += pole
+            wynik = pole
         
     wynik = round(wynik, 2)
     print(wynik)
