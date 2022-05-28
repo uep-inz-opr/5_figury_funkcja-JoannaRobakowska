@@ -10,7 +10,7 @@ def main():
     for figura in figury:
         figura = figura.split(' ')
         figura = [float(x) for x in figura]
-        pole = licz_pole(*figura)
+        pole = policz(*figura)
         if pole == "Błąd":
             print("Błąd: można podać maksymalnie 3 liczby")
             return
