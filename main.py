@@ -1,16 +1,40 @@
 import math
-class ListTooShortException(Exception):
-  pass
 
-def policz(lista, dzialanie):
-  if len(lista) < 3:
-    raise ListTooShortException("„Błąd: można podać maksymalnie 3 liczby")
-  for i in lista = 1:
-    wynik = 3,14*x*x
-  return wynik
-   for i in lista = 2:
-    wynik = (lista, lambda x, y: x * y)
-  return wynik
-   for i in lista = 3:
-    wynik = (lista,sqrt((a+b+c)/2*((a+b+c)/2-a)((a+b+c)/2-b)((a+b+c)/2-c) )
-  return wynik
+def main():
+    liczba_figur = int(input())
+    figury = []
+    for _ in range(int(liczba_figur)):
+        figura = input()
+        figury.append(figura)
+    wynik = 0.0
+    for figura in figury:
+        figura = figura.split(' ')
+        figura = [float(x) for x in figura]
+        pole = licz_pole(*figura)
+        if pole == "Błąd":
+            print("Błąd: można podać maksymalnie 3 liczby")
+            return
+        else:
+            wynik += pole
+
+
+def policz(*args):
+  if len(*args) < 3:
+    return "„Błąd: można podać maksymalnie 3 liczby"
+  elif len(args) == 1:
+    wynik = 3,14*pow(args[0], 2)
+    return wynik
+  elif len(args) == 2:
+    wynik = args[0]*args[1]
+    return wynik
+  elif len(args) == 3:
+      p = (args[0] + args[1] + args[2])/2
+      to_sqrt = p * (p-args[0]) * (p-args[1]) * (p-args[2])
+      wynik = math.sqrt(to_sqrt)
+    return wynik
+ 
+    wynik = round(wynik, 2)
+    print(wynik)
+
+if __name__ == '__main__':
+    main()
