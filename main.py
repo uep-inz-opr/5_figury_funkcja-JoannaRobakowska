@@ -28,9 +28,9 @@ def policz(*args):
     wynik = args[0]*args[1]
     return wynik
   elif len(args) == 3:
-      p = (args[0] + args[1] + args[2])/2
-      to_sqrt = p * (p-args[0]) * (p-args[1]) * (p-args[2])
-      wynik = math.sqrt(to_sqrt)
+    p = (args[0] + args[1] + args[2])/2
+    to_sqrt = p * (p-args[0]) * (p-args[1]) * (p-args[2])
+    wynik = math.sqrt(to_sqrt)
     return wynik
  
     wynik = round(wynik, 2)
