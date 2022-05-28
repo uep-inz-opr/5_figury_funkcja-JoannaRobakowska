@@ -19,7 +19,7 @@ def main():
 
 
 def policz(*args):
-  elif len(args) == 1:
+  if len(args) == 1:
     wynik = 3,14*pow(args[0], 2)
     return wynik
   elif len(args) == 2:
