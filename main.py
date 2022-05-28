@@ -30,7 +30,7 @@ def main():
             print("Błąd: można podać maksymalnie 3 liczby")
             return
         else:
-            wynik += pole
+            wynik = pole
  
     wynik = round(wynik, 2)
     print(wynik)
