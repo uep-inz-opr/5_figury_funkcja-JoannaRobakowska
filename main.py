@@ -19,8 +19,6 @@ def main():
 
 
 def policz(*args):
-  if len(*args) < 3:
-    return "„Błąd: można podać maksymalnie 3 liczby"
   elif len(args) == 1:
     wynik = 3,14*pow(args[0], 2)
     return wynik
@@ -32,6 +30,8 @@ def policz(*args):
     to_sqrt = p * (p-args[0]) * (p-args[1]) * (p-args[2])
     wynik = math.sqrt(to_sqrt)
     return wynik
+  else:
+    return "„Błąd: można podać maksymalnie 3 liczby"
  
     wynik = round(wynik, 2)
     print(wynik)
