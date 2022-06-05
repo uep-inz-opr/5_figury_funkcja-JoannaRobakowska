@@ -35,6 +35,3 @@ for figura in lst:
         break
 
 print(round(pole,2))
-
-if __name__ == '__main__':
-    main()
